@@ -19,7 +19,7 @@ scene.add(directionalLight);
 
 // Chargement du modèle 3D du skin (ici un fichier .obj)
 const loader = new THREE.OBJLoader();
-loader.load('http://localhost:8000/skin.obj', function (object) {
+loader.load('https://github.com/luc20911/MineSkins/blob/main/models/skin.obj', function (object) {
     object.scale.set(0.1, 0.1, 0.1);  // Ajuste l'échelle du modèle si nécessaire
     object.position.set(0, -1, 0);  // Positionne le modèle à une hauteur visible
     scene.add(object);
